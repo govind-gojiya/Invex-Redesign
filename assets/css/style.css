@@ -1,0 +1,732 @@
+/* Google fonts Poppins */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body a {
+    text-decoration: none !important;
+}
+
+
+/* ######################
+   Navbar CSS
+   ######################
+*/
+
+.laptopNav {
+    font-family: Poppins;
+}
+
+.phoneNav {
+    display: none;
+}
+
+.laptopNav .upperNavbar {
+    background-color: #0f062b;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.laptopNav .upperNavbar .container {
+    height: 3rem;
+}
+
+.laptopNav .upperNavbar.container h4 {
+    margin-bottom: 0px;
+    line-height: 3rem;
+}
+
+.laptopNav .upperNavbar .input-group,
+.laptopNav .upperNavbar .input-group p,
+.laptopNav .upperNavbar .login-btn {
+    background: rgba(255, 255, 255, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.laptopNav .upperNavbar .input-group {
+    width: 40%;
+}
+
+.laptopNav .upperNavbar .input-group p {
+    opacity: 0.5;
+}
+
+.laptopNav .upperNavbar .input-group .form-control {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    filter: brightness(1.5);
+}
+
+.laptopNav .upperNavbar .login-btn {
+    opacity: 90%;
+    color: #fff !important;
+    padding: 0 2.2rem;
+}
+
+.laptopNav .upperNavbar .signup-btn {
+    padding: 0 2.2rem;
+    color: #0f062b;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: none;
+}
+
+.laptopNav .mainNavbar {
+    height: 2.5rem;
+    font-size: small;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.laptopNav .mainNavbar ul {
+    list-style: none;
+}
+
+.laptopNav .mainNavbar ul li {
+    margin: 0 0.5rem;
+}
+
+.laptopNav .mainNavbar ul li .active {
+    border-bottom: 2px solid #212121;
+    border-radius: 2.1px;
+}
+
+.laptopNav .mainNavbar ul li a {
+    color: #212121;
+}
+
+.laptopNav .mainNavbar .newUser {
+    background: #0f062b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    /* margin-left: 11rem; */
+    padding: 0.2rem 1.8rem;
+}
+
+.phoneNav {
+    background-color: #0f062b;
+}
+
+.phoneNav .container-fluid .collapse li {
+    display: flex;
+    justify-content: center;
+}
+
+.phoneNav .container-fluid .collapse li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.phoneNav .navbar-toggler {
+    line-height: 0;
+}
+
+.phoneNav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.phoneNav ul li .active {
+    border-bottom: 2px solid #ffffff;
+    border-radius: 2.1px;
+}
+
+.phoneNav .container-fluid .collapse .newUser {
+    color: #0f062b;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.2rem 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .laptopNav {
+        display: none;
+    }
+    .phoneNav {
+        display: block !important;
+    }
+}
+
+
+/* ######################
+   Hero Section CSS
+   ######################
+*/
+
+.heroSection {
+    background-image: url("../images/hero_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 120vh;
+    width: 100%;
+}
+
+.heroSection .heroBackground {
+    height: inherit;
+    background: linear-gradient(95.58deg, #0a194f 0%, #0f062b 100%);
+    mix-blend-mode: screen;
+}
+
+.heroSection .heroText {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 5rem;
+    color: #fff;
+}
+
+.heroSection .input-group {
+    background: rgba(255, 255, 255, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 1.375rem;
+    margin-top: 2.5rem;
+}
+
+.heroSection .input-group .form-control {
+    background: transparent;
+    border: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #ffffff;
+    filter: brightness(1.5);
+}
+
+.heroSection .input-group .input-group-append {
+    padding: 0.875rem;
+}
+
+.heroSection .hero-btn {
+    margin-top: 2.5rem;
+    width: 12.5rem;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 0.5rem;
+    height: 3.25rem;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+@media (max-width: 767.98px) {
+    .heroSection .heroText {
+        font-size: 1.9rem !important;
+        line-height: 3rem !important;
+    }
+}
+
+
+/* ######################
+   Top-End Section
+   ######################
+*/
+
+.topEndSection .backgroundTopEnd {
+    position: absolute;
+}
+
+.topEndSection .dot {
+    z-index: -2;
+    background: #0f062b;
+    opacity: 0.03;
+    position: absolute;
+    right: 16%;
+    border-radius: 50%;
+    width: 23.75rem;
+    height: 23.75rem;
+}
+
+.topEndSection .featureCard {
+    position: relative;
+}
+
+.topEndSection h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.topEndSection .featureCard {
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-image: url("../image/features_bg.png");
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.topEndSection .featureCard p {
+    font-size: medium;
+    font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+    .topEndSection .dot {
+        display: none;
+    }
+    .topEndSection h1 {
+        font-size: large;
+    }
+    .topEndSection .featureCard p {
+        font-size: large;
+        margin-bottom: 2.5rem !important;
+    }
+    .topEndSection .featureCard {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .topEndSection .featureCard {
+        width: 21% !important;
+        margin: 1rem;
+    }
+    .topEndSection h1 {
+        margin-left: 2rem;
+    }
+}
+
+
+/* ######################
+    Testimonial And Reccomanded Section CSS 
+   ######################
+*/
+
+.testimonial .container .flex .recommanded_list {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.testimonial .container .flex .duration {
+    font-weight: 300;
+    color: #808080;
+    margin-top: 1rem;
+}
+
+.testimonial .container .flex {
+    display: flex;
+    margin-top: 9rem;
+    flex-wrap: wrap;
+}
+
+.testimonial .container .row .card .upper {
+    height: 2rem;
+    width: 1.5rem;
+    float: right;
+    margin-right: 1rem;
+}
+
+.testimonial .container .row .card .card-body .logo .title1 .card-title span {
+    color: #808080;
+}
+
+.testimonial .container .row .card .card-body .logo .title1 .card-title {
+    font-weight: 600;
+}
+
+.testimonial .container .row .card .card-body .logo {
+    display: flex;
+}
+
+.testimonial .container .row .card .card-body .logo .title1 .company {
+    display: block;
+    color: #808080;
+}
+
+.testimonial .container .row .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 1.5px 1.5px 8px #808080;
+}
+
+.testimonial .container .row .card .card-body .logo .title1 {
+    margin-left: 1rem;
+}
+
+.testimonial .container .row .card .card-body .chart .card-text {
+    color: #212121;
+    font-weight: 600;
+}
+
+.testimonial .container .row .card .card-body .chart .text {
+    color: #008b3e;
+    font-weight: 600;
+}
+
+.testimonial .container .row .card .card-body .chart {
+    display: flex;
+}
+
+.testimonial .container .row .card .card-body .chart .chart-img {
+    background-image: linear-gradient(rgba(0, 139, 62, 0.5) rgba(0, 139, 62, 0));
+    overflow: hidden;
+}
+
+.testimonial .container-fluid {
+    background-color: #f5f6ff;
+    /* position: absolute; */
+}
+
+.testimonial .container-fluid .card {
+    /* position: relative; */
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.container-fluid .container .full-class .heading .class1 {
+    position: absolute;
+}
+
+.container-fluid .container .full-class .heading .top-left {
+    position: relative;
+}
+
+.container-fluid .container .full-class .heading .top-left h2 {
+    color: #0f062b;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
+}
+
+.container-fluid .container .full-class .card-1,
+.container-fluid .container .card-class .card-2,
+.container-fluid .container .card-class .card-3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0.1px 0.1px 8px #808080;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+.container-fluid .container .full-class .heading .top-left h5 {
+    color: #18191f;
+    font-weight: 600;
+}
+
+.container-fluid .container .full-class .heading .class1 img {
+    margin-top: 0.5rem;
+    opacity: 10%;
+    z-index: -1;
+}
+
+.testimonial .container-fluid .container .full-class {
+    display: flex;
+}
+
+.testimonial .container-fluid .container .full-class .card-1 {
+    position: relative;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.testimonial .container-fluid .container .full-class .card-1 .card-img-top {
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+}
+
+.testimonial .container-fluid .container .full-class .card-1 .card-text {
+    padding-left: 1.3rem;
+}
+
+.testimonial .container-fluid .container .full-class .card-1 .card-body img {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+}
+
+.testimonial .container-fluid .container .full-class .card-1 .card-body h5,
+.testimonial .container-fluid .container .card-class .card-2 .card-body h5,
+.testimonial .container-fluid .container .card-class .card-3 .card-body h5 {
+    padding-left: 1.3rem;
+}
+
+.testimonial .container-fluid .container .full-class .card-1 .card-body .para,
+.testimonial .container-fluid .container .card-class .card-3 .card-body .para,
+.testimonial .container-fluid .container .card-class .card-2 .card-body .para {
+    padding-left: 1.3rem;
+    color: #808080;
+}
+
+.testimonial .container-fluid .container .card-class .card-2 {
+    position: relative;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.testimonial .container-fluid .container .card-class .card-2 .card-img-top {
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+}
+
+.testimonial .container-fluid .container .card-class .card-2 .card-body img {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+}
+
+.testimonial .container-fluid .container .card-class .card-2 .card-body .card-text,
+.container-fluid .container .card-class .card-3 .card-body .card-text {
+    padding-left: 1.3rem;
+}
+
+.testimonial .container-fluid .container .card-class .card-3 {
+    position: relative;
+    padding: 2rem;
+    background-color: #fff;
+    float: left;
+}
+
+.testimonial .container-fluid .container .card-class .card-3 .card-img-top {
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+}
+
+.testimonial .container-fluid .container .card-class .card-3 .card-body img {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+}
+
+.testimonial .container-fluid .container .card-class {
+    display: flex;
+}
+
+@media (max-width: 415px) {
+    .testimonial .container-fluid .container .flex .duration {
+        display: none;
+    }
+    .container-fluid .container .full-class .heading .top-left h5 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial .container-fluid .container .full-class .heading .class1 {
+        display: none;
+    }
+    .testimonial .container-fluid .container .full-class {
+        display: block;
+    }
+    .testimonial .container-fluid .container .card-class {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 281px) {
+    .container-fluid .container .full-class .heading .top-left h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ######################
+   Artical Section CSS
+   ######################
+*/
+
+.article .container {
+    width: 100%;
+}
+
+.article .container .heading h2 {
+    margin-left: 5rem;
+}
+
+@media (max-width: 768px) {
+    .article .container .heading h2 {
+        margin-left: 1.4rem;
+    }
+}
+
+.article .container .mainCard {
+    padding: 1rem 5rem;
+}
+
+.article .container .mainCard .card {
+    border: none;
+}
+
+.article .container .mainCard .card .article-text {
+    background-color: #f8f8f8;
+}
+
+.article .container .mainCard .card .card-body {
+    padding: 2rem;
+}
+
+.article .container .mainCard .card .card-body .card-title {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.article .container .mainCard .card .card-body .card-text {
+    font-size: 0.7rem;
+}
+
+
+/* Three cards  */
+
+.article .container .threeCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article .container .threeCards .card {
+    border: none;
+    background-color: #f8f8f8;
+    margin: 1rem;
+    width: 18rem;
+}
+
+.article .container .threeCards .card .card-text {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.article .container .card .card-end {
+    display: flex;
+}
+
+.article .container .card .card-end .date {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.article .container .card .card-end a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .mainCard .card .row {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .mainCard .card .card-body p {
+        display: none;
+    }
+    .article .container .mainCard {
+        padding: 0px;
+        margin: 1.2rem;
+    }
+    .article .container .mainCard .card .card-body {
+        padding: 1rem;
+    }
+    .article .container .mainCard .card .card-body .card-title {
+        margin-top: 0px;
+        font-weight: 600;
+    }
+}
+
+
+/* ######################
+   Join Now Card Section CSS
+   ######################
+*/
+
+.joinNow .container .joinCard .row {
+    padding: 2rem 2rem;
+    background-image: url("/assets/images/joinnow_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+    width: 80%;
+    border-radius: 0.3rem;
+}
+
+.joinNow .container .btn-group {
+    height: 2rem;
+    border-radius: 0.1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.joinNow .container .btn-group input {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    font-size: 0.6rem;
+    color: white;
+    border: none;
+    filter: brightness(3);
+    width: 10rem;
+    opacity: 50%;
+}
+
+.joinNow .container .btn-group button {
+    background: white;
+    color: #0f062b;
+    font-size: 0.6rem;
+    width: 4rem;
+    border: none;
+    font-weight: 800;
+    border-radius: 4px;
+}
+
+.joinNow .container h2 {
+    text-align: left;
+    color: white;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .joinNow .container h2 {
+        font-weight: 600;
+        font-size: medium;
+    }
+    .joinNow .container .btn-group button {
+        margin: 0.8rem;
+    }
+}
+
+
+/* ######################
+   Footer CSS
+   ######################
+*/
+
+.footer {
+    background-color: #f8f8f8;
+    padding-top: 1rem;
+    font-size: 0.7rem;
+}
+
+.footer .container a {
+    text-decoration: none;
+}
